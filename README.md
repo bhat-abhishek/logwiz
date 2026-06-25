@@ -100,6 +100,47 @@ class CustomTransport {
 const customTransport = new CustomTransport();
 ```
 
+## Runbook
+
+### Install
+
+```bash
+# Using yarn (recommended)
+yarn install
+
+# Using npm
+npm install
+```
+
+### Build
+
+Compiles TypeScript sources in `src/` to JavaScript in `dist/`:
+
+```bash
+yarn build
+# or
+npm run build
+```
+
+### Test
+
+No test runner is configured yet. To add one:
+
+```bash
+# Example: add Jest with ts-jest
+yarn add --dev jest ts-jest @types/jest
+# Then add a "test" script to package.json and create __tests__/ files
+```
+
+### Publish (npm)
+
+```bash
+yarn build            # ensure dist/ is up to date
+npm publish           # publishes the dist/ directory per package.json "files"
+```
+
+---
+
 ## Contributing
 
 Contributions are welcome! If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are warmly welcome.
